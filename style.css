@@ -1,0 +1,214 @@
+/* ----------- Fonts --------------- */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Walter+Turncoat');
+
+
+/* ----------- General --------------- */
+
+.center {
+    text-align: center;
+}
+
+/* ----------- Header -------------- */
+
+#headers {
+    background-color: #090B1A;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#headers h1 {
+    padding-top: 40px;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+#headers p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ----------- Input --------------- */
+
+#main {
+    background-image: url('stars.jpg');
+    padding-bottom: 100px;
+}
+
+/* ----------- Input --------------- */
+
+#input-parent input {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #F4E80A;
+    border: 2px solid black;
+    box-shadow: 20px 20px 20px black;
+    font-size: 30px;
+}
+
+#input-parent {
+    padding: 25px 0px 0px 0px;
+}
+
+#input-parent input:hover {
+    background-color: #4A4AC8;
+}
+
+input[type="text"].guess::-webkit-input-placeholder {
+    font-size: 200px;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    color: white;
+    text-shadow: 1px 2px 2px black;
+}
+
+/* ----------- Guesses --------------- */
+
+#guesses li {
+    display: inline-block;
+    border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+    border-radius: 17%;
+    background-color: rgba(237, 244, 244, 0.3)
+}
+
+#guesses li p {
+    position: relative;
+    bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* ----------- Buttons -------------- */
+
+#submit-button {
+    width:58px;
+    height: 58px;
+    border-radius: 100%;
+    background-color: #CB2B2B;
+    position: relative;
+    margin: auto;
+    bottom: 65px;
+    left: 54px;
+    margin-bottom: -60px;
+    box-shadow: 10px 10px 10px black;
+}
+
+#submit-button:hover {
+    background-color: #34a853;
+    color: white;
+    cursor: pointer;
+    left: 60px;
+}
+
+#submit-button h4 {
+    position: relative;
+    top: 35%;
+}
+
+#menu-btns {
+    position: relative;
+    margin: auto;
+}
+
+#reset-button {
+    background-color: lightblue;
+    position: relative;
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+#reset-button:hover {
+    background-color: #85ACBA;
+    cursor: pointer;
+}
+
+#reset-button p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px -5px;
+}
+
+#hint-button {
+    background-color: lightblue;
+    position: relative;
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 10%;
+}
+
+#hint-button:hover {
+    background-color: #85ACBA;
+    cursor: pointer;
+}
+
+#hint-button p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px -5px;
+}
+
+
+/* ------- Footer Section ----------*/
+
+#footer {
+    width: 100%;
+    height: 97px;
+    border-top: solid 2px black;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+}
+
+#footer div {
+    display: inline-block;
+}
+
+#footer-first {
+    position: absolute;
+    margin: auto;
+    width: 95%;
+}
+
+img {
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+.fullstack {
+    width: 30%;
+    position: relative;
+    float: left;
+    padding-top: 14px;
+}
+
+.fullstack img {
+    float: right;
+}
+
+.grace {
+    width: 30%;
+    position: relative;
+    float: right;
+    padding-top: 23px;
+}
+
+.author {
+    width: 40%;
+    position: relative;
+    margin: auto;
+    top: 2vh;
+}
