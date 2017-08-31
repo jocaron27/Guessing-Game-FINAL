@@ -73,3 +73,22 @@ function shuffle(arr) {
     }
     return arr;
 }
+
+function makeGuess(game) {
+    var currentGuess = +$('.guess').val();
+    $('.guess').val('');
+    var output = game.playersGuessSubmission(currentGuess);
+    console.log(output);
+}
+
+$(document).ready(function() {
+    var game = newGame();
+    $('#submit-button').on('click', function(){
+        makeGuess(game);
+    });
+    $('.guess').keypress(function(event) {
+        if (event.which == 13) {
+           makeGuess(game);
+        }
+    })
+});
