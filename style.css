@@ -51,6 +51,8 @@
     border: 2px solid black;
     box-shadow: 20px 20px 20px black;
     font-size: 30px;
+    position: relative;
+    left: 20px;
 }
 
 #input-parent {
@@ -109,8 +111,8 @@ ul {
     background-color: #CB2B2B;
     position: relative;
     margin: auto;
-    bottom: 65px;
-    left: 54px;
+    top: 60px;
+    right: 44px;
     margin-bottom: -60px;
     box-shadow: 10px 10px 10px black;
 }
@@ -119,12 +121,7 @@ ul {
     background-color: #34a853;
     color: white;
     cursor: pointer;
-    left: 60px;
-}
-
-#submit h4 {
-    position: relative;
-    top: 35%;
+    right: 30px;
 }
 
 #menu-btns {

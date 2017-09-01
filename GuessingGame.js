@@ -48,7 +48,7 @@ Game.prototype.checkGuess = function() {
             nudge = 'lower';
         }
         if (this.playersGuess === this.winningNumber) {
-            $('#hint, #submit').hide();
+            $('#hint, #submit').prop('disabled', true);
             return "You Win!";
         } else if (this.difference() < 10) {
             return 'You\'re really close! Try going ' + nudge + '!';
@@ -60,7 +60,7 @@ Game.prototype.checkGuess = function() {
             return 'Sorry, that\'s nowhere near the right number.';
         } 
     }
-    $('#hint, #submit').hide();
+    $('#hint, #submit').prop('disabled', true);
     return "The number was " + this.winningNumber + ". Better luck next time!";
 }
 
@@ -113,10 +113,10 @@ $(document).ready(function() {
     })
     $('#reset-button').click(function() {
         game = newGame();
+        $('#hint, #submit').prop('disabled', false);
         $('.instructions').removeClass('header-active');
         $('.instructions').text('Guess a number between 1-100!')
         $('#guesses li').removeClass('guess-active');
         $('#guesses li').text('-');
-        $('#hint, #submit').show();
     })
 });
