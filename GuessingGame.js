@@ -47,10 +47,7 @@ Game.prototype.checkGuess = function() {
         } else {
             nudge = 'lower';
         }
-        if (this.playersGuess === this.winningNumber) {
-            $('#hint, #submit').prop('disabled', true);
-            return "You Win!";
-        } else if (this.difference() < 10) {
+        if (this.difference() < 10) {
             return 'You\'re really close! Try going ' + nudge + '!';
         } else if (this.difference() < 25) {
             return 'That\'s not too far off. Try again but ' + nudge + ' this time!';
@@ -59,9 +56,13 @@ Game.prototype.checkGuess = function() {
         } else if (this.difference() < 100) {
             return 'Sorry, that\'s nowhere near the right number.';
         } 
+    } else if (this.pastGuesses.length === 5 && this.playersGuess === this.winningNumber) {
+        $('#hint, #submit').prop('disabled', true);
+        return "You Win!";
+    } else if (this.pastGuesses.length >=5) {
+        $('#hint, #submit').prop('disabled', true);
+        return "The number was " + this.winningNumber + ". Better luck next time!";
     }
-    $('#hint, #submit').prop('disabled', true);
-    return "The number was " + this.winningNumber + ". Better luck next time!";
 }
 
 
