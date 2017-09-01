@@ -118,5 +118,6 @@ $(document).ready(function() {
         $('.instructions').text('Guess a number between 1-100!')
         $('#guesses li').removeClass('guess-active');
         $('#guesses li').text('-');
+        $('#hint').show();
     })
 });
