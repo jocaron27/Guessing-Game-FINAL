@@ -47,7 +47,7 @@ Game.prototype.checkGuess = function() {
         } else {
             nudge = 'lower';
         }
-        if (this.difference < 1) {
+        if (this.difference() < 1) {
             $('#hint, #submit').prop('disabled', true);
             return "You Win!";
         } else if (this.difference() < 10) {
